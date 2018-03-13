@@ -112,6 +112,10 @@ public abstract class Screen extends RelativeLayout implements Subscriber {
         if (styleParams.screenBackgroundColor.hasColor()) {
             setBackgroundColor(styleParams.screenBackgroundColor.getColor());
         }
+        String screenBackgroundImageName = styleParams.screenBackgroundImageName;
+        if (screenBackgroundImageName != null) {
+            setBackgroundResource(this.getResources().getIdentifier(screenBackgroundImageName, "drawable", activity.getPackageName()));
+        }
     }
 
     public void updateBottomTabsVisibility(boolean hidden) {

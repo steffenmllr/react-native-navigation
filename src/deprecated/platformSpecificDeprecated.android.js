@@ -216,8 +216,11 @@ function convertStyleParams(originalStyleObject) {
     topTabsHeight: originalStyleObject.topTabsHeight,
     screenBackgroundColor: processColor(originalStyleObject.screenBackgroundColor),
     rootBackgroundImageName: originalStyleObject.rootBackgroundImageName,
-
+    screenBackgroundImageName: originalStyleObject.screenBackgroundImageName,
     drawScreenAboveBottomTabs: !originalStyleObject.drawUnderTabBar,
+
+    navBarBackgroundImageName: originalStyleObject.navBarBackgroundImageName,
+    topTabTextFontFamily: originalStyleObject.topTabTextFontFamily,
 
     initialTabIndex: originalStyleObject.initialTabIndex,
     bottomTabsColor: processColor(originalStyleObject.tabBarBackgroundColor),
@@ -232,7 +235,7 @@ function convertStyleParams(originalStyleObject) {
     bottomTabFontFamily: originalStyleObject.tabFontFamily,
     bottomTabFontSize: originalStyleObject.tabFontSize,
     bottomTabSelectedFontSize: originalStyleObject.selectedTabFontSize,
-
+    screenBackgroundImageName: originalStyleObject.screenBackgroundImageName,
     navigationBarColor: processColor(originalStyleObject.navigationBarColor)
   };
 

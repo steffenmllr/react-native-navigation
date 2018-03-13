@@ -138,6 +138,9 @@ public class StyleParams {
 
     public Color screenBackgroundColor;
     public String rootBackgroundImageName;
+    public String screenBackgroundImageName;
+    public String navBarBackgroundImageName;
+
 
     public boolean drawScreenAboveBottomTabs;
 
