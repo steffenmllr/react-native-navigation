@@ -83,6 +83,9 @@ public class StyleParamsParser {
         result.topTabsHeight = getInt("topTabsHeight", getDefaultTopTabsHeight());
 
         result.screenBackgroundColor = getColor("screenBackgroundColor", getDefaultScreenBackgroundColor());
+        result.screenBackgroundImageName = params.getString("screenBackgroundImageName");
+        result.navBarBackgroundImageName = params.getString("navBarBackgroundImageName");
+
 
         result.bottomTabsInitialIndex = getInt("initialTabIndex", 0);
         result.bottomTabsHidden = getBoolean("bottomTabsHidden", getDefaultBottomTabsHidden());

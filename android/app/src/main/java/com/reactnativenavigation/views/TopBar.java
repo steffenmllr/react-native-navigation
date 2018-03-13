@@ -170,9 +170,14 @@ public class TopBar extends AppBarLayout {
             setTransparent();
         }
         titleBar.setStyle(styleParams);
+        String navBarBackgroundImageName = styleParams.navBarBackgroundImageName;
+        if (navBarBackgroundImageName != null) {
+            setBackgroundResource(this.getResources().getIdentifier(navBarBackgroundImageName, "drawable", self.getContext().getPackageName()));
+        }
         setReactView(styleParams);
         setTopTabsStyle(styleParams);
         setElevationEnabled(styleParams.topBarElevationShadowEnabled);
+
     }
 
     private void setTransparent() {
