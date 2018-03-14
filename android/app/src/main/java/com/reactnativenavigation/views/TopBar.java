@@ -172,7 +172,7 @@ public class TopBar extends AppBarLayout {
         titleBar.setStyle(styleParams);
         String navBarBackgroundImageName = styleParams.navBarBackgroundImageName;
         if (navBarBackgroundImageName != null) {
-            setBackgroundResource(this.getResources().getIdentifier(navBarBackgroundImageName, "drawable", self.getContext().getPackageName()));
+            setBackgroundResource(this.getResources().getIdentifier(navBarBackgroundImageName, "drawable", this.getContext().getPackageName()));
         }
         setReactView(styleParams);
         setTopTabsStyle(styleParams);
